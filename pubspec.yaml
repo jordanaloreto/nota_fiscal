@@ -1,0 +1,67 @@
+name: nota_fiscal
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.2 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+
+  cupertino_icons: ^1.0.2
+  objectbox: 2.2.1
+  objectbox_flutter_libs: 2.2.1
+  pdf: ^3.10.4
+  
+  # open_document: ^1.0.7
+  path_provider: ^2.1.1
+  share_extend: ^2.0.0
+  flutter_pdfview: ^1.3.1
+  brasil_fields: ^1.14.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+ 
+  flutter_lints: ^2.0.0
+  build_runner: ^2.4.6
+  objectbox_generator: 2.2.1
+  flutter_launcher_icons: ^0.13.1
+
+
+objectbox:
+  output_dir: database
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/financa.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/icons/financa.png"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "assets/icons/financa.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/icons/financa.png"
+flutter:
+
+  uses-material-design: true
+  assets:
+    - assets/icons/financa.png
+
+ 
